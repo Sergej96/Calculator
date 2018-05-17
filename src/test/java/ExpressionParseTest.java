@@ -43,14 +43,6 @@ public class ExpressionParseTest {
     public void parseTestOpenBrackets() throws NumberFormatException {
         String str = "(2+2*3";
         List<String> actual = ExpressionParse.parse(str);
-        /*
-        List<String> expected= Arrays.asList("2","2","+","3","*");
-        assertThat(actual,is(expected));
-        Throwable thrown = catchThrowable(()->{
-            ExpressionParse.parse(str);
-        });
-        assertThat(thrown.getMessage()).isNotBlank();
-        */
     }
 
     @Test(expected = NumberFormatException.class)
